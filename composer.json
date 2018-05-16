@@ -1,0 +1,19 @@
+{
+    "name": "atharva/module-order-merge-grid",
+    "description": "this module will add the data from store and merge grid with custom table and order table in admin side",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~5.6.0|7.0.2|7.0.4|~7.0.6"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Atharva\\OrderMerge\\": ""
+        }
+    }
+}
