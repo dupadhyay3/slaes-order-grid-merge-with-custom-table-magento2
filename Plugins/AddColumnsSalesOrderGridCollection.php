@@ -27,7 +27,7 @@ class AddColumnsSalesOrderGridCollection
             if ($result instanceof $this->collection) {
                 $select = $this->collection->getSelect();
                 $select->joinLeft(
-                    ["customorder" => "atharva_ordermerge"],
+                    ["customorder" => $this->collection->getTable("atharva_ordermerge")],
                     'main_table.entity_id = customorder.order_id',
                     array('recommend')
                 )
